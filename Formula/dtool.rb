@@ -8,6 +8,14 @@ class Dtool < Formula
 
   def install
     system "cargo", "install", "--locked", "--root", prefix, "--path", "."
+
+    system "#{bin}/dtool completion -s bash > dtool.bash"
+    system "#{bin}/dtool completion -s zsh > _dtool"
+    system "#{bin}/dtool completion -s fish > dtool.fish"
+
+    bash_completion.install "dtool.bash"
+    zsh_completion.install "_dtool"
+    fish_completion.install "dtool.fish"
   end
 
   test do
