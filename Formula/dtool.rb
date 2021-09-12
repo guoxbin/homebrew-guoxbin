@@ -1,8 +1,8 @@
 class Dtool < Formula
   desc "Command-line tool collection to assist development"
   homepage "https://github.com/guoxbin/dtool"
-  url "https://github.com/guoxbin/dtool/archive/v0.10.0.tar.gz"
-  sha256 "ce6cabd322050014f34bc135a80054c295dfc5df327b45f41f6aee40856d4665"
+  url "https://github.com/guoxbin/dtool/archive/refs/tags/v0.11.0.tar.gz"
+  sha256 "97a0c7f54e4e58001d02a031564cab391c26baf9a729417d59002863e03804d6"
 
   depends_on "rust" => :build
 
